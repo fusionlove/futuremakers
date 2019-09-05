@@ -1,6 +1,6 @@
 # Sage FutureMakers
 
-Welcome the the Sage Future Makers Github repository. Here you'll find all the resources and help you'll need for Sage FutureMakers. 
+Welcome to the Sage Future Makers Github repository. Here you'll find all the resources and help you'll need for Sage FutureMakers. 
 
 We've split the resources into two areas:
 
