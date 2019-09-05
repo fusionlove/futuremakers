@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body %}
+  <h1>Log in<h1>
+  
+
+  {% if 'name' in session %}
+  <p>You are already logged in</p>
+  {% else %}
+   <form action="/set_name" method="post"> 
+  <input type="text" name="name" value="Mickey">
+  <input type="submit" value="Submit">
+  </form>
+  {% endif %}
+
+
+{% endblock %}

@@ -1,0 +1,31 @@
+body{
+  background-color: green;
+  font-family: Georgia;
+}
+
+.page{
+  margin: 3em;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+.menu a:link,
+.menu a:active,
+.menu a:visited{
+  text-decoration: none;
+  color: white;
+  margin-right: 2em;
+  font-size: 20pt;
+}
+
+.menu a:hover{
+  color: blue;
+}
+
+.header{
+  font-size: 20pt;
+}

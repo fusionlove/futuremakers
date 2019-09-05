@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block body %}
+  <h1>What would you like to do?<h1>
+
+  <form action="/set_name" method="post"> 
+  <input type="text" name="name" value="Mickey">
+  <br />
+  <input type="submit" value="Submit" class="myButton">
+  </form>
+{% endblock %}

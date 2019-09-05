@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block body %}
+  <h1>Image<h1>
+
+<img src="{{ url }}" />
+
+
+{% for label in labels %}
+    <h1>{{label}}</h1>
+
+{% endfor %}
+{% endblock %}

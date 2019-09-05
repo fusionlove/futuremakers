@@ -1,0 +1,4 @@
+flask
+pyowm
+boto3
+botocore

@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block body %}
+  <h1>Weather<h1>
+  <p>This is the weather for {{ place}}:
+  </p>
+  {{ weather.get_status() }}
+{% endblock %}
