@@ -2,8 +2,9 @@
 
 Welcome to the Sage Future Makers Github repository. Here you'll find all the resources and help you'll need for Sage FutureMakers. 
 
-We've split the resources into two areas:
+We've split the resources into three areas:
 
+* instructions: PDFs showing how to do the workshop, as well as a manual for trainers
 * python-notebooks: Files for Part B (Python notebooks, to run in the Jupyter Notebook)
 * sample-web-app: Files for Part C (simple web app in Python with the Flask server, ready to deploy on Heroku)
 
