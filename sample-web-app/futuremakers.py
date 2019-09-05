@@ -2,9 +2,13 @@ import boto3
 from IPython.display import Image, display
 from pdb import set_trace
 
+import passwords
 
+access_key = passwords.access_key
+secret_access_key = passwords.secret_access_key
 
 def test_futuremakers():
+  translate_english_to_spanish('Hello World')
   print("The FutureMakers library is imported and ready to use.")
 
 def show_image(path):
@@ -162,8 +166,8 @@ def speak(text):
   # Create a client using the credentials and region defined in the [adminuser]
   # section of the AWS credentials file (~/.aws/credentials).
   polly = boto3.client("polly",   region_name='eu-west-1',
-    aws_access_key_id= access_key,
-    aws_secret_access_key='secret_access_key',)
+    aws_access_key_id= access_key ,
+    aws_secret_access_key=secret_access_key,)
 
   try:
       # Request speech synthesis

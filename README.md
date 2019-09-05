@@ -4,12 +4,9 @@ Welcome the the Sage Future Makers Github repository. Here you'll find all the r
 
 We've split the resources into two areas:
 
-* python_examples: Python files to build on
-* instructions: tutorials on setting up the tools we will need.
+* python-notebooks: Files for Part B (Python notebooks, to run in the Jupyter Notebook)
+* sample-web-app: Files for Part C (simple web app in Python with the Flask server, ready to deploy on Heroku)
 
-The main workshop instruction sheet is in instructions/WorkshopInstructions.pdf.
+Please note: there are two copies of futuremakers.py, one in python-notebooks, the other in sample-web-app. These are meant to be exactly the same. If you make a change to one, don't forget to copy it over to the other as well.
 
-Your Snatcbot login details are
-
-email: sagefuturemakers+x@gmail.com, where x is your worksheet number
-password: sagefuturemakers
+Please also note: the examples in this repository require two identical files, python-notebooks/passwords.py and sample-web-app/passwords.py, to work. These files contain Amazon Web Services passwords and MUST NOT be committed to this repository OR STORED ON ANY OTHER PUBLICLY ACCESSIBLE WEB PAGE, UNDER ANY CIRCUMSTANCES, or they will be stolen by automated scripts.

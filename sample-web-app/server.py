@@ -13,6 +13,10 @@ from pdb import set_trace
 # and set up two secret keys, one for our app
 # and one for the weather API
 
+import passwords
+bucket_name = passwords.bucket_name
+s3_region = passwords.s3_region
+
 app = Flask(__name__)
 
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
@@ -63,7 +67,7 @@ def age_form():
 def set_name():
     name = request.form['name']
     session['name'] = name
-    return render_template('age_form.html')
+    return render_template('index.html')
 
 @app.route('/weather')
 def weather():
@@ -94,11 +98,12 @@ def upload_file():
         # file.content_length
         # file.mimetype
 
-    url = "https://s3.amazonaws.com/" + S3_BUCKET +'/' + file.filename
-    print(url)
-    output = upload_file_to_s3(file, S3_BUCKET)
 
-    labels = detect_labels(S3_BUCKET, file.filename)
+    url = "https://" + bucket_name + '.s3.' + s3_region + '.amazonaws.com/' + file.filename
+    print(url)
+    output = upload_file_to_s3(file, bucket_name)
+
+    labels = detect_labels(bucket_name, file.filename)
 
     return render_template('show_image.html', url = url,
       labels=labels)
