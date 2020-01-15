@@ -58,6 +58,10 @@ def logout():
 def button():
     return render_template('button.html')
 
+@app.route('/new')
+def newpage():
+    return render_template('new.html')
+
 
 @app.route('/age_form')
 def age_form():
@@ -71,7 +75,7 @@ def set_name():
 
 @app.route('/weather')
 def weather():
-    place = 'London,GB'
+    place = 'Atlanta, Georgia'
     observation = owm.weather_at_place(place)
     weather = observation.get_weather()
     return render_template('weather.html', weather=weather, place=place)
